@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dots and Boxes</title>
+    <link rel="stylesheet" type="text/css" href="dots.css">
+    <script src="dots.js"></script>
+  </head>
+  <body>
+    <h2>Dots and Boxes</h2>
+    <!--this is the title/the name of the game-->
+    <h3>Rules:</h3>
+    <p>Players take turns joining two horizontally or vertically adjacent dots by a line. A player that completes the fourth side of a square, and makes a box, clicks the center of the box and indicates if they are "player 1" or "player 2". Then that same player must play again. When all the boxes have been colored, press the button that reads "Click here when the game is over". The player who has more colored boxes wins. Player 1 is red and player 2 is blue. To reset the game, refresh the page.</p>
+    
+    <!--the rules are written out so that the players understand how the game works and how to play it-->
+    
+    <button onClick="endGame()">Click here when the game is over</button>
+    
+    <!--when pressed, the button will state which player won the game-->
+    
+    <!--outline a box that is made up of 36 smaller boxes-->
+    
+    <div id="table">
+      <div class="sr">
+        
+        <!--sr means the skinny rows that are made up of the small, black boxes and the three smaller rows that can be clicked on during the game-->
+        
+        <div class="ss"></div>
+        
+        <!--ss are the small, black squares in the corners of the possible boxes-->
+        
+        <div class="hr" id="r11" onClick="rClick(11)"></div>
+        
+        <!--when the rows or columns are clicked, they will turn black indicating a side of the box-->
+        
+        <!--hr are the smaller rows in between the black squares-->
+        
+        <div class="ss"></div>
+        <div class="hr" id="r12" onClick="rClick(12)"></div>
+        <div class="ss"></div>
+        <div class="hr" id="r13" onClick="rClick(13)"></div>
+        <div class="ss"></div>
+      </div>
+      <div class="BR">
+        
+        <!--BR are the bigger rows made up of the large, white squares, that will change color to red or blue depending on who wins it during game play, and the skinny columns that can be clicked on during the game-->
+        
+        <div class="vc" id="c51" onClick="cClick(51)"></div>
+        
+        <!--vc are the small columns in between the black squares-->
+        
+        <div class="BS" id="s81" onClick="square(81)"></div>
+        
+        <!--when the squares are clicked, code will prompt with who won the square-->
+        
+        <!--the big squares should only be clicked when a square has been completed-->
+        
+        <!--BS are the big squares-->
+        
+        <div class="vc" id="c52" onClick="cClick(52)"></div>
+        <div class="BS" id="s82" onClick="square(82)"></div>
+        <div class="vc" id="c53" onClick="cClick(53)"></div>
+        <div class="BS" id="s83" onClick="square(83)"></div>
+        <div class="vc" id="c54" onClick="cClick(54)"></div>
+      </div>
+      
+      <!--the IDs are going to help the js file find what you clicked and change it to a different style/color-->
+      
+      <div class="sr">
+        <div class="ss"></div>
+        <div class="hr" id="r21" onClick="rClick(21)"></div>
+        <div class="ss"></div>
+        <div class="hr" id="r22" onClick="rClick(22)"></div>
+        <div class="ss"></div>
+        <div class="hr" id="r23" onClick="rClick(23)"></div>
+        <div class="ss"></div>
+      </div>
+      <div class="BR">
+        <div class="vc" id="c61" onClick="cClick(61)"></div>
+        <div class="BS" id="s91" onClick="square(91)"></div>
+        <div class="vc" id="c62" onClick="cClick(62)"></div>
+        <div class="BS" id="s92" onClick="square(92)"></div>
+        <div class="vc" id="c63" onClick="cClick(63)"></div>
+        <div class="BS" id="s93" onClick="square(93)"></div>
+        <div class="vc" id="c64" onClick="cClick(64)"></div>
+      </div>
+      <div class="sr">
+        <div class="ss"></div>
+        <div class="hr" id="r31" onClick="rClick(31)"></div>
+        <div class="ss"></div>
+        <div class="hr" id="r32" onClick="rClick(32)"></div>
+        <div class="ss"></div>
+        <div class="hr" id="r33" onClick="rClick(33)"></div>
+        <div class="ss"></div>
+      </div>
+      <div class="BR">
+        <div class="vc" id="c71" onClick="cClick(71)"></div>
+        <div class="BS" id="s10" onClick="square(10)"></div>
+        <div class="vc" id="c72" onClick="cClick(72)"></div>
+        <div class="BS" id="s20" onClick="square(20)"></div>
+        <div class="vc" id="c73" onClick="cClick(73)"></div>
+        <div class="BS" id="s30" onClick="square(30)"></div>
+        <div class="vc" id="c74" onClick="cClick(74)"></div>
+      </div>
+      <div class="sr">
+        <div class="ss"></div>
+        <div class="hr" id="r41" onClick="rClick(41)"></div>
+        <div class="ss"></div>
+        <div class="hr" id="r42" onClick="rClick(42)"></div>
+        <div class="ss"></div>
+        <div class="hr" id="r43" onClick="rClick(43)"></div>
+        <div class="ss"></div>
+      </div>
+    </div>
+  </body>
+</html>

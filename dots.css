@@ -1,0 +1,100 @@
+body {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+/*background is white so it is easy to see when a box has been made*/
+
+div {
+  width: 460px;
+  height: 460px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*these are the dimensions and margins for the board of the game*/
+
+#table {
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  box-shadow: 10px 10px 5px #8d8d8d;
+}
+/*this is the board color and it's shadow*/
+
+.sr {
+  width: 460px;
+  height: 10px;
+  float: left;
+}
+/*dimensions for each of the skinny rows that divide up the board*/
+
+.ss {
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: black;
+  float: left;
+}
+/*dimesions of each of the small squares and border color*/
+
+.hr {
+  width: 138px;
+  height: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  float: left;
+}
+/*dimesions of the small rows and border color*/
+
+.hr:hover {
+  width: 138px;
+  height: 8px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: black;
+  background-color: gray;
+  float: left;
+}
+/*you know where you can choose to click*/
+
+.BR {
+  width: 460px;
+  height: 140px;
+  float: left;
+}
+/*big row dimensions*/
+
+.vc {
+  width: 8px;
+  height: 138px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  float: left;
+}
+/*small column dimensions and border color*/
+
+.vc:hover {
+  width: 8px;
+  height: 138px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: black;
+  background-color: gray;
+  float: left;
+}
+/*you know where you can choose to click*/
+
+.BS {
+  width: 138px;
+  height: 138px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  float: left;
+  background-color: white;
+}
+/*big square dimensions and border color*/
