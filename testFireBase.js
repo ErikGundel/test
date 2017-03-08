@@ -6,6 +6,7 @@ function signIn() {
 	console.log("Entered the Function")
 	
 	firebase.auth().signInWithPopup(provider).then(function(result) {
+		console.log("okay?");
 	  // This gives you a Google Access Token. You can use it to access the Google API.
 	  var token = result.credential.accessToken;
 	  // The signed-in user info.
@@ -13,6 +14,7 @@ function signIn() {
 	  console.log(user.displayName)
 	  // ...
 	}).catch(function(error) {
+		console.log("okay2");
 	  // Handle Errors here.
 	  var errorCode = error.code;
 	  var errorMessage = error.message;
